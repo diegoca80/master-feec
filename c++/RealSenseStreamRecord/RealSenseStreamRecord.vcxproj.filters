@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="DriverStreamSave.cpp">
+    <ClCompile Include="RealSenseStreamRecord.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
