@@ -13,13 +13,13 @@ Intel RealSense R200 has support for recording of `rgb, depth and infrared` fram
 Many configuration options are described into Intel RealSense SDK Documentation to work with R200 module on different scenarios. The open-source tool provided by Intel development kit called `cpp-config-ui` was used to obtain the best record preferences through a nice UI interface that allows real-time frame comparison.
 
 The camera options below were choosen differing from default values and can be used for both C++/Python recording:
-  - rs_option.RS_OPTION_R200_LR_AUTO_EXPOSURE_ENABLED: 1
-  - rs_option.RS_OPTION_R200_EMITTER_ENABLED: 1
-  - rs_option.RS_OPTION_R200_LR_GAIN, 2
+  - `rs_option.RS_OPTION_R200_LR_AUTO_EXPOSURE_ENABLED`: 1
+  - `rs_option.RS_OPTION_R200_EMITTER_ENABLED`: 1
+  - `rs_option.RS_OPTION_R200_LR_GAIN`: 2
 
 In case of using Python it was also important to set these values below:
-  - depth_control_preset: 5 
-  - ivcam_preset = 8
+  - `depth_control_preset`: 5 
+  - `ivcam_preset` = 8
 
 # Record steps
 
@@ -31,7 +31,7 @@ In order to obtain data from general scenarios, it will be different indoor plac
 
 As seen above, the focus on data collection will be `indoor places` in order to keep this project based on the scenario of a robot entering in an unknown place and trying to recognize the emotional state to perform determined action.
 
-Each category will have 25 different sample data collected to allow the analysis of different persons and place characteristics. For example, the category “commercial” will be obtained inside two different places (supermarket / drugstore) in different times in order to get crowded / quiet moments. Moreover, the time record chosen was 8 seconds based on an appropriate period to recognize surrounding features and person emotions.
+Each category will have `25 different sample` data collected to allow the analysis of different persons and place characteristics. For example, the category “commercial” will be obtained inside two different places (supermarket / drugstore) in different times in order to get crowded / quiet moments. Moreover, the time record chosen was 8 seconds based on an appropriate period to recognize surrounding features and person emotions.
 
 At this first moment, the emotion labels analysed for the indoor places will be based on the cross-tab below:
 
@@ -42,6 +42,6 @@ At this first moment, the emotion labels analysed for the indoor places will be 
 | Turbulent  | Happy  | 2 |
 | Turbulent  | Neutral  | 3 |
 
-The representation of each label in the dataset will be balanced and all the labels will be included for each place category sample. In summary, the number of samples will be 300 records based on:
+The representation of each label in the dataset will be balanced and all the labels will be included for each place category sample. In summary, the number of samples will be `300 records` based on:
 
 - Number of samples = 3 place categories * 25 recordings * 4 labels
