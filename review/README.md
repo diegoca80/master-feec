@@ -1,47 +1,32 @@
-# RGB-D Dataset for Emotion-based Place Recognition
+# Human-Robot Interaction / Social Robot - Papers Analysis
 
-The camera configuration / preferences, the process to obtain these and the recording steps are described below in each separate section. The code and readme maintenance will be made according to next Master's phases.
+Below, some papers related to this project will be reviewed and their content described in few words.
 
-# Camera configuration values
+# Analysing the relevance of features for a social navigation task - Spain
 
-The camera used to capture the frames will be the `Intel RealSense R200`, which was designed to focus on medium distances and can capture RGB-D (color and depth data) with frame detection up to 60 fps. As this experiment has to worry about disk space limitations and the number of frames per second doesn't need to be too big in order to accomplish the task, the default value considered will be `30 fps`.
+Focus on social robot movement in order to reach a person target walking through a indoor scene
+and trying to keep the most natural velocity and orientation as possible. This paper model a supervised learning
+approach choosing the best features described below in order to classify a robot movement as "go" or "return" way,
+which means that a "go" label is a more realistic way of robot interaction:
 
-Intel RealSense R200 has support for recording of `rgb, depth and infrared` frames. In this project, all types will be used with the default resolution of `640x480`. In this way, deep learning techniques could be useful in order to analyse data and provide the classification using transfer learning neural networks that require a larger image size.
+– Average Distance To Closest Person
+– Average Relative Velocity To Closest Person
+– Average Relative Orientation To Closest Person
+– Average Angle To Closest Person
+– Average robot’s linear velocity
+– Average robot’s angular velocity
 
-# Camera preferences process
+# A systematic review of Adaptivity in human-robot interaction - Australia
 
-Many configuration options are described into Intel RealSense SDK Documentation to work with R200 module on different scenarios. The open-source tool provided by Intel development kit called `cpp-config-ui` was used to obtain the best record preferences through a nice UI interface that allows real-time frame comparison.
+Survey-based paper with a lot of cases of human-robot interaction adaptivity with goals of improve 1-1 conversation, emotion expressions and gestures.
+This work have a huge number of references that brings content related to different subjects such as healthcare, education, public places and home.
+Most of them refers to robots that try to find persons in a room or public space, beginning some kind of interaction after that and keeping long-term
+conversation or 1-1 contact, independent if this persons were busy or not.
+Interesting papers cited:
 
-The camera options below were choosen differing from default values and can be used for both C++/Python recording:
-  - `rs_option.RS_OPTION_R200_LR_AUTO_EXPOSURE_ENABLED`: 1
-  - `rs_option.RS_OPTION_R200_EMITTER_ENABLED`: 1
-  - `rs_option.RS_OPTION_R200_LR_GAIN`: 2
+- Machine Learning for Social Multiparty Human-Robot Interaction - 2014
+Use of location, facial expressions, gaze behavior and body language features to start or not interaction in bartender context.
 
-In case of using Python it was also important to set these values below:
-  - `depth_control_preset`: 5 
-  - `ivcam_preset` = 8
-
-# Record steps
-
-The dataset will contain frame images acquired by a Intel Realsense R200 with approximately a height of `1 meter` (this value was chosen based on previous papers and the goal of avoid possible occlusions. 
-In order to obtain data from general scenarios, it will be different indoor place categories:
-  - `commercial`: Public indoor places such as supermarket and drugstore
-  - `home`: Rooms such as living room and dinner room
-  - `workplace`: Indoor rooms such as office room and meeting room
-
-As seen above, the focus on data collection will be `indoor places` in order to keep this project based on the scenario of a robot entering in an unknown place and trying to recognize the emotional state to perform determined action.
-
-Each category will have `25 different sample` data collected to allow the analysis of different persons and place characteristics. For example, the category “commercial” will be obtained inside two different places (supermarket / drugstore) in different times in order to get crowded / quiet moments. Moreover, the time record chosen was 8 seconds based on an appropriate period to recognize surrounding features and person emotions.
-
-At this first moment, the emotion labels analysed for the indoor places will be based on the cross-tab below:
-
-| Surrounding  | Emotion | Label | 
-| ------------- | ------------- | ------------- |
-| Quiet  | Happy  | 0 |
-| Quiet  | Neutral  | 1 |
-| Turbulent  | Happy  | 2 |
-| Turbulent  | Neutral  | 3 |
-
-The representation of each label in the dataset will be balanced and all the labels will be included for each place category sample. In summary, the number of samples will be `300 records` based on:
-
-- Number of samples = 3 place categories * 25 recordings * 4 labels
+- May i help you?: Design of human-like polite approaching behavior - 2015
+Models tree types of possible actions of robots that are active, proactive and passive interactions in shopping malls. 
+https://www.youtube.com/watch?v=wrlxjyTf1fs
