@@ -38,3 +38,50 @@ Use of location, facial expressions, gaze behavior and body language features to
 
 Models tree types of possible actions of robots that are active, proactive and passive interactions in shopping malls. 
 ( https://www.youtube.com/watch?v=wrlxjyTf1fs )
+
+# Evaluating the engagement with social robots - 2015
+
+Assumes only face to face interaction but uses similar sensors such as RGBD data and features such as gaze, head position, body posture, movement velocity.
+Shows the importance of non-verbal features and could be useful to get information considering one person methodology.
+
+# Human-aware Robot navigation survey - 2013
+
+Survey-based with a huge number of theory behind HRI that could bring many different words specific to this subject.
+Some of these terms are:
+
+- human friendly navigation: usually it refers to navigate in a environment keeping a safe distance from humans and obstacles
+
+- human-like motion behavior: Refering to robot movements in accordance with crowded places
+
+Also, a summary of capabilities are described and some references made related to:
+
+- respect personal zones
+
+- respect affordance spaces
+
+- avoid culturally scorned upon behaviors
+
+- avoid erratic motions or noises that cause distraction
+
+- reduce velocity when approaching a person
+
+- approach from the front for explicit interaction
+
+- modulate gaze direction
+
+Example of labels cited to think about:
+
+- the robot selects an action (e.g. go to human)
+- the robot selects a pose (e.g. in front of human)
+- the robot selects a path (e.g. avoiding a group of people talking
+to each other)
+- the robot adapts an aspect of behavior while moving on the path
+(e.g. reducing speed to avoid noise near persons)
+
+# Robot navigation in large-social social maps: An action recognition approach - 2016
+
+This work proposes an integrated robot framework that allows navigation in
+a human populated environment. This work employs the performed actions of individuals
+so as to re-plan and design a collision-free and at the same time a socially acceptable trajectory.
+It tries to recognize person/environment and group activity (working, conversation, walking) in order to give the proper
+action to the robot (focus on movements to avoid collisions in a naturalistic way).
