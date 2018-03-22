@@ -1,6 +1,23 @@
 # Human-Robot Interaction / Social Robot - Papers Analysis
 
 Below, some papers related to this project will be reviewed and their content described in few words.
+Some search terms used to find these papers:
+
+- human-robot initial interaction
+
+- social robot action decision
+
+- robot navigation human environments
+
+- social robot engagement
+
+- robot perception human interaction
+
+- social robot adaptation
+
+- social robot navigation
+
+- human-aware robot navigation
 
 # Analysing the relevance of features for a social navigation task - 2015
 
@@ -85,3 +102,16 @@ a human populated environment. This work employs the performed actions of indivi
 so as to re-plan and design a collision-free and at the same time a socially acceptable trajectory.
 It tries to recognize person/environment and group activity (working, conversation, walking) in order to give the proper
 action to the robot (focus on movements to avoid collisions in a naturalistic way).
+
+# Service robots: System design for tracking people through data fusion and initiating interaction with the human group by inferring social situations - 2016
+
+Designed to work with multiple persons and recognition features such as number of legs, face recognition and human torsos and shoulders.
+Models social situations described below and tries to start an interaction based on these:
+
+- individual-to-robot: acts paying attention
+- individual-to-individual: asks if need something in discrete way
+- confidential discussion : don't interrupt
+- group-to-robot: acts paying attention
+- robot-to-individual : acts asking something or help
+- robot-to-group : acts asking something or help
+- group discussion : don't interrupt
