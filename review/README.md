@@ -115,3 +115,7 @@ Models social situations described below and tries to start an interaction based
 - robot-to-individual : acts asking something or help
 - robot-to-group : acts asking something or help
 - group discussion : don't interrupt
+
+# Book: Universal Access in Human-Computer interaction - 2016 - Toronto Conference
+
+# Book: Social Robots - 2016 - Kansas City Conference
