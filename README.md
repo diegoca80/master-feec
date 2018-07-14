@@ -59,4 +59,11 @@ The record number of each label in the dataset will be balanced in order to allo
 
 Some images produced with Sketchup 3D demonstrate the general idea:
 
-![Person looking to the camera in quiet room](img/sample_active.jpeg)
+![Person looking](img/sample_active.jpeg)
+Person looking to the robot so it starts a conversation in active social action.
+
+![Person looking](img/sample_active.jpeg)
+Person looking to the robot so it starts a conversation in active social action.
+
+![Person looking](img/sample_active.jpeg)
+Person looking to the robot so it starts a conversation in active social action.
