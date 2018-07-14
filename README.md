@@ -59,11 +59,11 @@ The record number of each label in the dataset will be balanced in order to allo
 
 Some images produced with Sketchup 3D demonstrate the general idea:
 
-![Person looking](img/sample_active.jpeg)
 Person looking to the robot so it starts a conversation in active social action.
+![Person looking](img/sample_active.jpeg)
 
-![Person looking](img/sample_active.jpeg)
-Person looking to the robot so it starts a conversation in active social action.
+Distracted person divert attention to the robot so it gives a compliment in proactive social action.
+![Person distracted](img/sample_proactive.jpeg)
 
-![Person looking](img/sample_active.jpeg)
-Person looking to the robot so it starts a conversation in active social action.
+People talking with each other so the robot takes inactive social action.
+![Group conversation](img/sample_inactive.jpeg)
