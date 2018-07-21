@@ -35,7 +35,7 @@ The labels are related to the more suitable action the robot could perform based
 
 | Label  | Meaning | Action
 | ------------- | ------------- | ------------- |
-| Active  | engaging and involving in social situations | Robot enters in the room, starts and maintains a conversation with someone |
+| Active  | engaging and involving in social situations | Robot enters in the room, someone come in robot direction or start a conversation, then the robot maintains the interaction|
 | Proactive  | trying to engage making a social action | Robot enters in the room trying to interact or giving someone a compliment |
 | Inactive  | not engaging or involving in any social situation | Robot enters in the room quietly |
 
@@ -52,7 +52,7 @@ Some examples and their corresponding assigned labels are described below:
 | Person looking at its cellphone and divert the attention to the robot | Proactive |
 | People working in noisy office room | Proactive |
 | People playing pool and start looking into the robot | Active |
-| People in the gym looking to see who came in the door| Active |
+| People in the gym looking to the robot and starting a conversation| Active |
 | People came in robot direction and ask a question | Active |
 
 The record number of each label in the dataset will be balanced in order to allow a better representation. In summary, the number of samples will be `300 records` based on different places and situations.
